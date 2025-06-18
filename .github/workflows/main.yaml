@@ -23,8 +23,8 @@ jobs:
 
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
-        with:
-          distribution: arn:aws:cloudfront::396913715305:distribution/E3RS5Z5VHDGPM1
+        env:
+          DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           paths: |
             /index.html
             /style.css
