@@ -1,27 +1,22 @@
-name: Upload Yallacloud Website Files
+name: Push resume files to S3
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout
-      - uses: actions/setup-node
-      - name: Install dependencies
-        run: yarn install
-      - name: Run Lint
-        run: yarn run lint
-      - name: Build
-        run: yarn run build
-      - name: Set AWS credentials
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      - name: Deploy to S3
-        run: yarn run deploy
+          aws-region: us-east-1 # Replace with your region
+
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync build s3://yalla-cloud-site --delete # Replace my-bucket-name with your bucket name
