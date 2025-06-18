@@ -25,6 +25,4 @@ jobs:
         uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-          paths: |
-            /index.html
-            /style.css
+          PATHS: "/index.html /styles.css"
