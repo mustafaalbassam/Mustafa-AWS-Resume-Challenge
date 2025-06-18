@@ -19,4 +19,5 @@ jobs:
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync . s3://yalla-cloud-site --delete # Replace my-bucket-name with your bucket name
+          aws s3 sync --follow-symlinks --delete --exclude '.git*/*' . s3://yalla-cloud-site 
+     
