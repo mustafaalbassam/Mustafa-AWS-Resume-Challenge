@@ -8,7 +8,7 @@ What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresu
 ---
 # **Prerequisites**#
 
-Feel free to copy my work,, and make sure that you have the following below steps already done:
+Feel free to copy my work and make sure that you have the following below steps already done:
 
 * Terraform installed
 * AWS CLI installed
