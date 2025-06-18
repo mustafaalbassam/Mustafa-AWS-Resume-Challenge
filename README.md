@@ -7,7 +7,9 @@ What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresu
 
 ### **Project Overview: Static Web Hosting on AWS with Terraform & GitHub Actions**
 
- This comprehensive a multi-series, Infrastructure as Code and CI/CD automation project. It is designed to simplify and accelerate your learning of deploying secure, scalable static websites on AWS using Terraform and GitHub Actions.
+ This a comprehensive, multi-series, Infrastructure as Code and CI/CD automation project. 
+ 
+ It is designed to simplify and accelerate your learning of deploying secure, scalable static websites on AWS using Terraform and GitHub Actions.
 
 You’ll build a complete AWS-based web infrastructure from scratch—covering DNS, SSL, S3 website hosting, and CloudFront CDN—while mastering modular Terraform design and automation practices.
 
