@@ -20,4 +20,11 @@ jobs:
       - name: Sync files to S3 bucket
         run: |
           aws s3 sync --follow-symlinks --delete build s3://yalla-cloud-site --exclude '.git/*' --exclude '.DS_Store' --exclude '.vscode/*' --exclude '.github/' --exclude 'README.md'
-          
+
+      - name: Invalidate CloudFront
+        uses: chetan/invalidate-cloudfront-action@v2
+        with:
+          distribution: arn:aws:cloudfront::396913715305:distribution/E3RS5Z5VHDGPM1
+          paths: |
+            /index.html
+            /style.css
