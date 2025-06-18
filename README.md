@@ -3,8 +3,6 @@
 This is my attempt at cloud resume challenge in AWS.
 What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresumechallenge.dev/) is a multiple-step resume project which helps build and demonstrate skills fundamental to pursuing a career in Cloud. The project was published by Forrest Brazeal.
 
-Here's a **refined and more professional version** of your project overview, keeping it clear, engaging, and aligned with infrastructure automation and DevOps audiences:
-
 ---
 
 ### **Project Overview: Static Web Hosting on AWS with Terraform & GitHub Actions**
