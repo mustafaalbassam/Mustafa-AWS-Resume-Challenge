@@ -27,8 +27,8 @@ function toggle_onclick($win, $navbar, width) {
 var typed = new Typed('#typed', {
     strings: [
         'DevSecOps Engineer',
-        'Cloud Security Engineer',
         'Cloud Architect',
+        'Cyberecurity Engineer',
         'U.S. Army Veteran',
         'Lifelong Learner',
         'Mentor'
@@ -41,9 +41,9 @@ var typed = new Typed('#typed', {
 
 var typed_2 = new Typed('#typed_2', {
     strings: [
-        'DevSecOps Engineer',
-        'Cloud Security Engineer',
+       'DevSecOps Engineer',
         'Cloud Architect',
+        'Cyberecurity Engineer',
         'U.S. Army Veteran',
         'Lifelong Learner',
         'Mentor'
